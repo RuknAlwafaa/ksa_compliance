@@ -8,6 +8,50 @@ to a section with the version name.
 
 ## Unreleased Changes
 
+## 0.47.0
+
+* Support displaying `Return Against Additional References` in `ZATCA Phase 2 print format`.
+* Fix letter head in ZATCA print formats.
+* Add Additional IDs translation.
+
+## 0.46.0
+
+* Use ZATCA CLI 2.7.0
+
+## 0.45.1
+
+* Use ZATCA CLI 2.6.0
+  * This fixes an issue with invoice ZATCA validation prior to submission
+  * Refer to the [CLI release](https://github.com/lavaloon-eg/zatca-cli/releases/tag/2.6.0) for details
+
+## 0.45.0
+
+* Add `Return Against` in `ZATCA Phase 2 Print Format` for Debit & Credit Notes.
+
+## 0.44.0
+
+* Support multiple billing references for return invoices
+  * Add `Return Against Additional References` custom field to sales invoice
+  * The field has no ERPNext impact. The additional references are included in the XML for ZATCA
+  * The field allows submitted non-return invoices for the same company/customer/supplier as the current invoice
+
+## 0.43.2
+
+* Fetch buyer’s postal zone from buyer details in SIAF instead of incorrectly using the seller’s postal zone.
+
+## 0.43.1
+
+* Consider multiple tax categories in invoice allowance amount.
+
+## 0.43.0
+
+* Support selecting Print Format and Language when downloading PDF/A-3b.
+
+## 0.42.0
+
+* Add support to generate PDF/A-3b for invoices
+  * Uses ZATCA CLI 2.5.0
+
 ## 0.41.2
 
 * Update ZATCA Phase 2 Print Format for both Sales Invoice and POS Invoice.
